@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia</title>
+	<style>
+		.hidden {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1 class="title">Trivia</h1>
+		<button id="startBtn">Start</button>
+		<div class="ques-section hidden">
+			<div class="timer">Time left: <span id="time">30</span> seconds</div>
+			<div class="questions">
+				<!-- <div class="ques">
+					<h2>Denmark</h2>
+					<input type="radio" name="country1" id="c1-1" value="New Delhi">New Delhi
+					<input type="radio" name="country1" id="country1_1" value="Quito"><label for="country1_1">Quito</label>
+					<input type="radio" name="country1" id="country1_1" value="Copenhagen"><label for="country1_1">Copenhagen</label>
+					<input type="radio" name="country1" id="country1_1" value="Prague"><label for="country1_1">Prague</label>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="scorecard hidden">
+			Correct Answers: <span id="correctAnswers"></span><br>
+			Incorrect Answers: <span id="wrongAnswers"></span><br>
+			Unanswered: <span id="unanswered"></span>
+		</div>
+	</div>
+
+	<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+
+	<script src="assets/javascript/app.js"></script>
+</body>
+</html>
