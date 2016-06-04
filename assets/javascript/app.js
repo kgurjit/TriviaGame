@@ -12,7 +12,7 @@ var resetScores = function(){
 	game.correctAnswers = 0;
 	game.wrongAnswers = 0;
 	game.unanswered = 0;
-	game.time = 1;
+	game.time = 30;
 };
 
 var getQuizHtml = function(){

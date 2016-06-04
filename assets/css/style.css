@@ -79,13 +79,11 @@ label {
     width: 100%;
     background: #171469;
     color: #fff;
-    font-style: italic;
     font-size: 1.5em;
     font-weight: lighter;
 }
 
 .score .val {
 	color: #171469;
-	font-size: 4em;
-	font-style: italic;
+	font-size: 3.5em;
 }
