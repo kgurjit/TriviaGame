@@ -12,7 +12,7 @@ var resetScores = function(){
 	game.correctAnswers = 0;
 	game.wrongAnswers = 0;
 	game.unanswered = 0;
-	game.time = 30;
+	game.time = 1;
 };
 
 var getQuizHtml = function(){
@@ -35,9 +35,9 @@ var getQuizHtml = function(){
 	return html;
 };
 var updateAndShowScorecard = function(){
-	$("#correctAnswers").html(game.correctAnswers);
-	$("#wrongAnswers").html(game.wrongAnswers);
-	$("#unanswered").html(game.unanswered);
+	$(".correct .val").html(game.correctAnswers);
+	$(".wrong .val").html(game.wrongAnswers);
+	$(".unanswered .val").html(game.unanswered);
 	$(".scorecard").show();
 	$(".ques-section").hide();
 	$("#startBtn").show();

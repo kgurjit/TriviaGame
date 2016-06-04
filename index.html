@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Trivia</title>
-	<style>
-		.hidden {
-			display: none;
-		}
-	</style>
+	<title>Capital Trivia</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 	<div class="wrapper">
-		<h1 class="title">Trivia</h1>
-		<button id="startBtn">Start</button>
+		<div class="header">
+			<h1 class="title">Capital Trivia</h1>
+			<button id="startBtn" class="btn">Start</button>
+		</div>
 		<div class="ques-section hidden">
 			<div class="timer">Time left: <span id="time">30</span> seconds</div>
 			<div class="questions">
@@ -27,15 +28,23 @@
 		</div>
 
 		<div class="scorecard hidden">
-			Correct Answers: <span id="correctAnswers"></span><br>
-			Incorrect Answers: <span id="wrongAnswers"></span><br>
-			Unanswered: <span id="unanswered"></span>
+			<div class="score correct">
+				<div class="title">Correct</div>
+				<div class="val"></div>
+			</div>
+			<div class="score wrong">
+				<div class="title">Incorrect</div>
+				<div class="val"></div>
+			</div>
+			<div class="score unanswered">
+				<div class="title">Unanswered</div>
+				<div class="val"></div>
+			</div>
 		</div>
 	</div>
 
 	<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
-	<script src="app.js"></script>
-
+	
 	<script src="assets/javascript/app.js"></script>
 </body>
 </html>
